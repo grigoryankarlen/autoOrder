@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="static/style.css">
+</head>
+<body>
+
+<div class="buttons">
+    <button class="productButton" onclick="pages.product.click()"></button>
+    <button class="providerButton" onclick="pages.provider.click()"></button>
+    <button class="orderButton" onclick="pages.order.click()"></button>
+</div>
+
+<div class="products">
+    <button class="syncButton" onclick="sync()"></button>
+<!--    <button class="addProductButton" onclick="pages.product.add()"></button>-->
+    <button class="findProductButton" onclick="pages.product.find()"></button>
+</div>
+<div class="providers">
+    <button class="addProviderButton" onclick="pages.provider.add()"></button>
+    <button class="findProviderButton" onclick="pages.provider.find()"></button>
+</div>
+<div class="orders">
+    <button class="addOrder" onclick="order()"></button>
+</div>
+
+<div class="addProducts"></div>
+<div class="getProducts"></div>
+<div class="providerProducts">
+    <div class="close" onclick="close()"></div>
+</div>
+<div class="getProviders"></div>
+<div class="sendOrderList"></div>
+<script src="static/script.js"></script>
+</body>
+</html>
