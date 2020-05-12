@@ -1,0 +1,457 @@
+body{
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-color: #c5ecc6cf;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+
+
+div.buttons{
+    align-self: center;
+    transition: 5s;
+}
+
+div.products{
+    display: none;
+    align-self: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-right: 232px;
+}
+div.providers{
+    display: none;
+    align-self: center;
+    flex-direction: column;
+    padding: 20px;
+}
+div.orders{
+    display: none;
+    align-self: center;
+    flex-direction: column;
+    padding: 20px;
+    margin-left: 232px;
+}
+
+button.productButton{
+    outline: none;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/product.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+button.providerButton{
+    outline: none;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/officel/100/000000/supplier.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 70%;
+}
+button.orderButton{
+    outline: none;
+    width: 100px;
+    height: 100px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/todo-list.png");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+button.syncButton{
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/connection-sync.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+button.addProductButton{
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/add.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+button.findProductButton{
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+button.addProviderButton{
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/add.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+button.findProviderButton{
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/search.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+button.addOrder{
+    outline: none;
+    width: 80px;
+    height: 80px;
+    border: none;
+    border-radius: 50%;
+    background-image: url("https://img.icons8.com/bubbles/100/000000/add.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+}
+
+
+
+
+
+
+div.addProducts{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+div.getProducts{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+div.getProviders{
+    display: none;
+    flex-direction: column;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+}
+
+div.addProducts > button    {
+    margin: 20px;
+    align-self: flex-end;
+    border: 2px solid #f0f0f0;
+
+}
+
+
+
+div.product > input::placeholder{
+    color: red;
+}
+
+input{
+    text-align: center;
+    margin: 5px;
+}
+select{
+    outline: none;
+    text-align: center;
+    margin: 5px;
+}
+button{
+    margin: 5px;
+}
+
+
+div.product{
+    background-color: #fcfff0;
+    display: flex;
+    margin: 5px;
+    width: inherit;
+    justify-content: center;
+
+}
+div.product > input{
+    border: none;
+    background-color: inherit;
+    color: #607d8b;
+
+}
+div.product > select {
+    border: none;
+    background-color: inherit;
+    color: #607d8b;
+}
+div.product > p {
+    display: block;
+    margin: 5px;
+    /*text-decoration: underline;*/
+    width: 150px;
+    text-align: center;
+    align-self: center;
+    color: #607d8b;
+}
+div.product > a{
+    display: block;
+    align-self: center;
+    margin: 5px;
+    color: #607d8b;
+}
+div.product > button {
+    background-color: inherit;
+    border: none;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+}
+button.removeProduct{
+    background-image: url("img/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50%;
+
+}
+button.updateProduct{
+    background-image: url("img/update.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+button.saveUpdates{
+    background-image: url("img/save.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 80%;
+}
+
+div.findProduct{
+    display: flex;
+    background-color: #fcfff0;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+
+}
+div.findProduct > input{
+    background-color: inherit;
+    border: 2px solid #f0f0f0;
+}
+div.findProduct > button{
+    /*outline: none;*/
+    margin: 5px;
+    border: 2px solid #f0f0f0;
+    /*border: 1px solid white;*/
+}
+div.findProduct > select{
+    background-color: inherit;
+    border: 2px solid #f0f0f0;
+}
+
+div.addProduct{
+    background-color: #fcfff0;
+    align-self: center;
+    padding: 20px;
+}
+div.addProduct > input{
+    background-color: inherit;
+    border: 2px solid #f0f0f0;
+}
+div.addProduct > button{
+    /*outline: none;*/
+    margin: 5px;
+    border: 2px solid #f0f0f0;
+    /*border: 1px solid white;*/
+}
+div.addProduct > select{
+    background-color: inherit;
+    border: 2px solid #f0f0f0;
+}
+div.providerProducts{
+    display: none;
+    position: fixed;
+    padding: 20px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow: 0 0 10px black;
+}
+div.providerProducts > div.close{
+    position: relative;
+    right: -670px;
+    top: -8px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    background-image: url("img/close.png");
+    background-position: center;
+    background-size: cover;
+}
+
+
+div.provider{
+    background-color: #fcfff0;
+    display: flex;
+    margin: 5px;
+    width: inherit;
+    justify-content: center;
+}
+div.provider > input{
+    border: none;
+    background-color: inherit;
+    color: #607d8b;
+
+}
+div.provider > p {
+    display: block;
+    margin: 5px;
+    /*text-decoration: underline;*/
+    width: 150px;
+    text-align: center;
+    align-self: center;
+    color: #607d8b;
+}
+div.provider > button {
+    border: none;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    margin: 5px;
+}
+button.updateProvider{
+    background-image: url("img/update.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 60%;
+}
+
+div.findProvider{
+    display: flex;
+    background-color: #fcfff0;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+div.findProvider > input{
+    /*outline: none;*/
+    background-color: inherit;
+    border: 2px solid #f0f0f0;
+
+}
+div.findProvider > button{
+    /*outline: none;*/
+    margin: 5px;
+    border: 2px solid #f0f0f0;
+}
+
+div.addProvider{
+    display: flex;
+    background-color: #fcfff0;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+div.addProvider > input{
+    /*outline: none;*/
+    background-color: inherit;
+    border: 2px solid #f0f0f0;
+
+}
+div.addProvider > button{
+    /*outline: none;*/
+    margin: 5px;
+    border: 2px solid #f0f0f0;
+}
+
+
+
+div.sendOrderList{
+    display: none;
+    flex-direction: column;
+    background-color: white;
+    border-radius: 20px;
+    min-width: 60vw;
+    padding: 20px;
+}
+
+div.order{
+    display: flex;
+    align-self: center;
+    background-color: #fcfff0;
+    margin: 5px;
+}
+div.order[data-red='true']{
+    background-color: #ffdada;
+}
+div.order[data-error='true']{
+    background-color: #ff00008c;
+}
+
+div.order > button{
+    background-color: inherit;
+    border: none;
+    width: 20px;
+    height: 20px;
+    align-self: center;
+    background-image: url("img/close.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 120%;
+    border-radius: 50%;
+}
+div.order > input {
+    border: none;
+    background-color: inherit;
+    color: #607d8b;
+    margin: 5px;
+}
+div.order > input::placeholder{
+    color: red;
+}
+
+div.order > p {
+    display: block;
+    margin: 5px;
+    /*text-decoration: underline;*/
+    width: 150px;
+    text-align: center;
+    align-self: center;
+    color: #607d8b;
+}
+
+div.sendOrderList > button{
+    margin: 20px;
+    align-self: flex-end;
+    border: 2px solid #f0f0f0;
+}
+
+
